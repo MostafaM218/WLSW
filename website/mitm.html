@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>WILS-ATCK-NG {Man In The Middle} </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/WILS-ATCK-NG.css">
+        <link rel="shortcut icon" type="image/png" href="image/30738395_1016341975190045_981781274202996736_n.png">
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <script src="javascript/wow.min.js"></script>
+        <script src="javascript/jquery-3.6.0.min.js"></script>
+	    <script src="javascript/bootstrap.js"></script>
+    </head>
+    
+    
+    <body class="text-center">
+            
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <div class="d-flex align-items-center mb-2 mb-md-0 text-dark text-decoration-none">
+      <a href="index.html" class="">
+          <img class="" height="30" width="225" src="image/nav-logo.png">
+      </a>
+    </div>
+        
+      <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about-us.html">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="dropdown08" data-bs-toggle="dropdown" aria-expanded="false">WILS-ATCK-NG</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown08">
+              <li><a class="dropdown-item" href="Brout-Force.html">Brout-Force attack</a></li>
+              <li><a class="dropdown-item active" href="mitm.html">Man In The Middle attack</a></li>
+              <li><a class="dropdown-item" href="configuration.html">Configratons</a></li>
+	      <li><a class="dropdown-item" href="report.html">Report</a></li>
+            </ul>
+          </li>
+             <li class="nav-item">
+            <a class="nav-link" href="contact-us.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+        
+        
+        
+        <div class="intro">
+             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="pills-show-tab" data-bs-toggle="pill" data-bs-target="#pills-show" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Show Devices</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-ARP-tab" data-bs-toggle="pill" data-bs-target="#pills-ARP" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">ARP Spoofing</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-HTTP-tab" data-bs-toggle="pill" data-bs-target="#pills-HTTP" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">HTTP Sniffing</button>
+  </li>
+    <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-SSL-tab" data-bs-toggle="pill" data-bs-target="#pills-SSL" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">SSL Striping</button>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-show" role="tabpanel" aria-labelledby="pills-home-tab">
+      <br>
+      <form method="post" action="" class="row g-3">
+          <div class="row">
+              <div class="col-md-3">
+    <div class="input-group">
+      <div class="input-group-text">Target Range</div>
+      <input type="text" class="form-control" id="autoSizingInputGroup" name="target_range"  placeholder="192.168.1.0/24">
+    </div>
+  </div>
+              <button type="submit" class="btn btn-warning btn-lg col-md-2" name="scan-btn">Scan Now</button>
+          </div>
+      </form>
+      <br>
+       <textarea class="form-control" name="txt-show" rows="18" cols="50"></textarea>
+  </div>
+  <div class="tab-pane fade" id="pills-ARP" role="tabpanel" aria-labelledby="pills-profile-tab">
+      <br>
+      <form method="post" action="" class="row g-3">
+          <div class="row">
+              <div class="col-md-3">
+    <div class="input-group">
+      <div class="input-group-text">Target</div>
+      <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Target">
+    </div>
+  </div>
+              <div class="col-md-3">
+    <div class="input-group">
+      <div class="input-group-text">Getway</div>
+      <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Getway">
+    </div>
+  </div>
+              <button type="submit" class="btn btn-danger btn-lg col-md-2" name="atk-btn">Attack</button>
+          </div>
+      </form>
+      <br>
+       <textarea class="form-control" name="txt-show" rows="18" cols="50"></textarea>
+  </div>
+  <div class="tab-pane fade" id="pills-HTTP" role="tabpanel" aria-labelledby="pills-contact-tab">
+      <br>
+      <form method="post" action="" class="row g-3">
+          <div class="row">
+              <div class="col-md-3">
+    <div class="input-group">
+      <div class="input-group-text">Interface</div>
+      <input type="text" class="form-control" id="autoSizingInputGroup" name="interface"  placeholder="Interface">
+    </div>
+  </div>
+              <button type="submit" class="btn btn-danger btn-lg col-md-2" name="atk-http-btn">Attack</button>
+          </div>
+      </form>
+      <br>
+       <textarea class="form-control" name="txt-show" rows="18" cols="50"></textarea>
+  </div>
+  </div>
+    <div class="tab-pane fade" id="pills-SSL" role="tabpanel" aria-labelledby="pills-contact-tab">4</div>
+</div>
+      
+        
+    </body>
+</html>
