@@ -1,1 +1,4 @@
-# WLSW
+In our modern days, Software and Hardware attacking become one of the most controversial issues. In my project, I will discuss the software attacking issues by developing a software {Cracking Tool-Kit} for attacking the wireless connection. 
+It called {WIRELESS NET-ATTACKING TOOLKIT (WILS-ATCK-NG)}.
+WILS-ATCK-NG It’s purpose to attack the wireless connection by first attacking the wireless network to get SSID and the Password even if the user is hiding the name of the network by hiding {SSID}of the wireless network by using the brout force attack. Then the tool will collect all the data that will send or received in this network. And it will crack the devices that connecting to the network and convert this device into a zombie device and collect all the data on this device to make a BOTNET network that I control them using the command and control {C&C} server. Then it will scan all routers and switches configurations to find out the vulnerability in the network and export all the configurations into a PDF file.
+This tool was designed for the unprofessional and professional red teams, pentration testers.
